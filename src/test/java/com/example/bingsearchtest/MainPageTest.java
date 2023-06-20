@@ -33,7 +33,7 @@ public class MainPageTest {
 
     @AfterEach
     public void tearDown() {
-//        driver.quit();
+        driver.quit();
     }
 
     @Test
@@ -50,8 +50,6 @@ public class MainPageTest {
         clickElement(results, 0);
 
         assertEquals("https://www.selenium.dev/", driver.getCurrentUrl());
-
-
     }
 
     public void clickElement(List<WebElement> results, int num){
